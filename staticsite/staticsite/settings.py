@@ -7,6 +7,7 @@ ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'pages',
 )
 
 MIDDLEWARE_CLASSES = (
