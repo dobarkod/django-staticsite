@@ -1,1 +1,10 @@
-<html><body><h1>Hello, Django!</h1></body></html>
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    </head>
+    <body>
+        <h1>Hello, Django!</h1>
+    </body>
+</html>
