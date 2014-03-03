@@ -10,14 +10,14 @@ def google_analytics(self):
 
     Insert in template:
 
-        {{ analytics_code }}
+        {{ google_analytics_code }}
     """
     if settings.DEBUG is not False:
         return {
-            'analytics_code': render_to_string('analytics.html', {
+            'google_analytics_code': render_to_string('analytics.html', {
                 'ANALYTICS_CODE': settings.GOOGLE_ANALYTICS_KEY,
                 'ANALYTICS_DOMAIN': settings.GOOGLE_ANALYTICS_DOMAIN
             })
         }
     else:
-        return {'analytics_code': ""}
+        return {'google_analytics_code': ""}
